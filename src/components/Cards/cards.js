@@ -3,7 +3,7 @@ import styles from "./cards.module.scss";
 
 const cards = ({ results }) => {
   let display;
-  console.log(results);
+
   if (results) {
     display = results.map((x) => {
       let { id, name, image, gender, species, origin, location, status } = x;
@@ -16,7 +16,7 @@ const cards = ({ results }) => {
             <img
               src={image}
               alt="characters"
-              className={`${styles.imgFluid} img-fluid`}
+              className={`${styles.imgFluid} img-fluid mt-2`}
             />
             <div className="content">
               <div className="fs-4 fw-bold mb-2">{name}</div>
