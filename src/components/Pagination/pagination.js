@@ -1,25 +1,23 @@
 import React from "react";
+import ReactPaginate from "react-paginate";
 
-const pagination = ({ pageNumber, setPageNumber }) => {
-  let next = () => {
-    setPageNumber((x) => x + 1);
-  };
-
-  let prev = () => {
-    if (pageNumber === 1) return;
-
-    setPageNumber((x) => x - 1);
-  };
-
+const pagination = ({ info, pageNumber, setPageNumber }) => {
   return (
-    <div className="container d-flex justify-content-center gap-5 my-5">
-      <button onClick={prev} className="btn btn-success">
-        Previous
-      </button>
-      <button onClick={next} className="btn btn-success">
-        Next
-      </button>
-    </div>
+    <ReactPaginate
+      className="pagination justify-content-center gap-4 m6"
+      forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
+      nextLabel="Next"
+      previousLabel="Previous"
+      nextClassName="btn btn-success"
+      previousClassName="btn btn-success"
+      pageClassName="page-item"
+      pageLinkClassName="page-link"
+      activeClassName="active"
+      onPageChange={(data) => {
+        setPageNumber(data.selected + 1);
+      }}
+      pageCount={info?.pages}
+    />
   );
 };
 

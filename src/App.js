@@ -5,6 +5,7 @@ import Filters from "./components/Filters/filters";
 import Cards from "./components/Cards/cards";
 import Pagination from "./components/Pagination/pagination";
 import Search from "./components/Search/search";
+
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
 
@@ -44,7 +45,11 @@ function App() {
         </div>
       </div>
 
-      <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} />
+      <Pagination
+        info={info}
+        pageNumber={pageNumber}
+        setPageNumber={setPageNumber}
+      />
     </div>
   );
 }
