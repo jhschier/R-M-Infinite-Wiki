@@ -3,7 +3,7 @@ import styles from "./search.module.scss";
 
 const search = ({ setSearch, updatePageNumber }) => {
   return (
-    <form className="d-flex justify-content-center gap-4 mb-5">
+    <form className="d-flex justify-content-center gap-4 my-5">
       <input
         onChange={(e) => {
           updatePageNumber(1);

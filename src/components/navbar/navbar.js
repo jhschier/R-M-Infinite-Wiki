@@ -39,13 +39,21 @@ const navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav fs-5">
-            <NavLink className="nav-link" to="/">
+            <NavLink activeClassName="active" className="nav-link" to="/">
               Characters
             </NavLink>
-            <NavLink className="nav-link" to="/episodes">
+            <NavLink
+              activeClassName="active"
+              className="nav-link"
+              to="/episodes"
+            >
               Episodes
             </NavLink>
-            <NavLink className="nav-link" to="/locations">
+            <NavLink
+              activeClassName="active"
+              className="nav-link"
+              to="/locations"
+            >
               Locations
             </NavLink>
           </div>
