@@ -8,17 +8,14 @@ const cards = ({ results }) => {
     display = results.map((x) => {
       let { id, name, image, gender, species, origin, location, status } = x;
       return (
-        <div
-          key={id}
-          className={`${styles.border} col-4 position-relative mb-4`}
-        >
-          <div className="">
+        <div key={id} className={` col-4 position-relative mb-4`}>
+          <div className={`${styles.border}`}>
             <img
               src={image}
               alt="characters"
-              className={`${styles.imgFluid} img-fluid mt-2`}
+              className={`${styles.imgFluid} img-fluid`}
             />
-            <div className="content">
+            <div className="content p-2">
               <div className="fs-4 fw-bold mb-2">{name}</div>
               <div className="mb-1">{gender}</div>
               <div className="mb-1">{species}</div>

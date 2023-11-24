@@ -24,7 +24,7 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
         previousLabel="Previous"
         previousClassName="btn btn-success fs-5"
         nextClassName="btn btn-success fs-5"
-        activeclassName="active"
+        activeClassName="active"
         marginPagesDisplayed={width < 576 ? 1 : 2}
         pageRangeDisplayed={width < 576 ? 1 : 2}
         pageCount={info?.pages}

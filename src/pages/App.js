@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-import Filters from "./components/Filters/filters";
-import Cards from "./components/Cards/cards";
-import Pagination from "./components/Pagination/pagination";
-import Search from "./components/Search/search";
+import Filters from "../components/Filters/filters";
+import Cards from "../components/Cards/cards";
+import Pagination from "../components/Pagination/pagination";
+import Search from "../components/Search/search";
 
 function App() {
   let [pageNumber, updatePageNumber] = useState(1);
@@ -33,10 +33,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center creepster my-4">
-        <span className="text-success">Rick and Morty's </span>
-        <span className="text-primary"> Infinite WiKi</span>
-      </h1>
       <Search updatePageNumber={updatePageNumber} setSearch={setSearch} />
       <div className="container">
         <div className="row">
