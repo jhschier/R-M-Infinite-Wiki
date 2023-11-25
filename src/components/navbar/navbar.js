@@ -20,7 +20,7 @@ const navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <style jsx>
+          <style jsx="true">
             {`
               button[aria-expanded="false"] > .close {
                 display: none;
@@ -32,26 +32,26 @@ const navbar = () => {
             `}
           </style>
 
-          <i class="fas fa-bars open fw-bold text-dark"></i>
-          <i class="fas fa-times close fw-bold text-dark"></i>
+          <i className="fas fa-bars open fw-bold text-dark"></i>
+          <i className="fas fa-times close fw-bold text-dark"></i>
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav fs-5">
-            <NavLink activeClassName="active" className={`nav-link`} to="/">
+            <NavLink activeclassname="active" className={`nav-link`} to="/">
               Characters
             </NavLink>
             <NavLink
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               to="/episodes"
             >
               Episodes
             </NavLink>
             <NavLink
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               to="/locations"
             >
