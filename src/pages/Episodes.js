@@ -27,7 +27,7 @@ const Episodes = () => {
   return (
     <div className="container">
       <div className="row">
-        <h1 className="text-center mb-3">
+        <h1 className="text-center m-4">
           Episode: {""}
           <span className="text-success">{name === "" ? "Unknown" : name}</span>
         </h1>
