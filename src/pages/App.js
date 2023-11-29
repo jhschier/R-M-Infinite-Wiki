@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="text-center text-success mb-4">Characters</h1>
       <Search updatePageNumber={updatePageNumber} setSearch={setSearch} />
       <div className="container">
         <div className="row">
@@ -44,7 +45,7 @@ function App() {
           />
           <div className="col-8">
             <div className="row">
-              <Cards results={results} />
+              <Cards page="/" results={results} />
             </div>
           </div>
         </div>

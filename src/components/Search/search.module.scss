@@ -12,3 +12,10 @@
 .btn {
     box-shadow: 5px 9px 9px rgba($color: #005500, $alpha: 0.25);
 }
+
+@media (max-width: 576px) {
+
+    .input{
+        width: 80%;
+    }
+}

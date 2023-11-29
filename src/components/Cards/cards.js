@@ -1,21 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./cards.module.scss";
 
-const cards = ({ results }) => {
+const cards = ({ results, page }) => {
   let display;
 
   if (results) {
     display = results.map((x) => {
       let { id, name, image, gender, species, origin, location, status } = x;
       return (
-        <div key={id} className={` col-4 position-relative mb-4`}>
+        <Link
+          style={{ textDecoration: "none" }}
+          to={`${page}${id}`}
+          key={id}
+          className={` col-4 position-relative mb-4`}
+        >
           <div className={`${styles.border}`}>
             <img
               src={image}
               alt="characters"
               className={`${styles.imgFluid} img-fluid`}
             />
-            <div className="content p-2">
+            <div className="content p-2 text-success">
               <div className="fs-4 fw-bold mb-2">{name}</div>
               <div className="mb-1">{gender}</div>
               <div className="mb-1">{species}</div>
@@ -52,7 +58,7 @@ const cards = ({ results }) => {
               );
             }
           })()}
-        </div>
+        </Link>
       );
     });
   } else {

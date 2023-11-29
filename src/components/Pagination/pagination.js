@@ -23,8 +23,8 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
         nextLabel="Next"
         forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
         previousLabel="Previous"
-        previousClassName={`${styles.a} btn btn-primary fs-5`}
-        nextClassName={`${styles.a} btn btn-primary fs-5`}
+        previousClassName={`${styles.a} btn btn-success fs-5`}
+        nextClassName={`${styles.a} btn btn-success fs-5`}
         activeClassName="active"
         marginPagesDisplayed={width < 576 ? 1 : 2}
         pageRangeDisplayed={width < 576 ? 1 : 2}
