@@ -24,3 +24,11 @@
     
     border-radius: 5px 5px 0 0;
 }
+
+@media (max-width: 576px){
+
+    .badge{
+        right: 3vh;
+        top: 40vh;
+    }
+}

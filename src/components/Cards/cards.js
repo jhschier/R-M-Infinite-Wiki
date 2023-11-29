@@ -13,9 +13,11 @@ const cards = ({ results, page }) => {
           style={{ textDecoration: "none" }}
           to={`${page}${id}`}
           key={id}
-          className={` col-4 position-relative mb-4`}
+          className={` col-lg-4 col-md-6 col-12 position-relative mb-4`}
         >
-          <div className={`${styles.border}`}>
+          <div
+            className={`${styles.border} d-flex flex-column justify-content-center`}
+          >
             <img
               src={image}
               alt="characters"

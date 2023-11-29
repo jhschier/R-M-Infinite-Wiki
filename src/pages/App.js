@@ -43,7 +43,7 @@ function App() {
             setSpecies={setSpecies}
             updatePageNumber={updatePageNumber}
           />
-          <div className="col-8">
+          <div className="col-lg-8 col-12">
             <div className="row">
               <Cards page="/" results={results} />
             </div>
