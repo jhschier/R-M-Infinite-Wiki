@@ -53,7 +53,7 @@ const navbar = () => {
             <NavLink
               activeclassname="active"
               className="nav-link"
-              to="/locations"
+              to="/location"
             >
               Locations
             </NavLink>
